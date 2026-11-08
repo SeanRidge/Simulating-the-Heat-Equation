@@ -24,7 +24,7 @@ u[:, -1] = 100 # right edge
 # Plotting
 fig, axis = plt.subplots()
 
-im = axis.imshow(u, cmap=plt.cm.inferno, vmin=0, vmax=100,
+im = axis.imshow(u, cmap=plt.cm.jet, vmin=0, vmax=100,
                  extent=[0, length, 0, length], origin='lower')
 plt.colorbar(im, ax=axis, label='Temperature (°C)')
 axis.set_xlabel('x (mm)')

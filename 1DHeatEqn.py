@@ -22,7 +22,7 @@ u[-1] = 100
 # Plotting
 fig, axis = plt.subplots()
 
-pcm = axis.pcolormesh([u], cmap = plt.cm.inferno, vmin=0, vmax=100)
+pcm = axis.pcolormesh([u], cmap = plt.cm.jet, vmin=0, vmax=100)
 plt.colorbar(pcm, ax=axis, label='Temperature (°C)')
 axis.set_xlim(0, nodes)
 axis.set_yticks([])
